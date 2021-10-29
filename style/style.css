@@ -2,21 +2,36 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&display=swap');
 
+:root {
+
+    /*fonts*/
+    --font-padrao: 'Oswald', sans-serif; font-weight: 300;
+    --font-destaque: 'Oswald', sans-serif; font-weight: 500;
+
+    /*colors*/
+    --cor1: #024873;
+    --cor2: #48CAD9;
+    --cor3: #50F2F2;
+    --cor4: #F2B84B;
+    --cor5: #F24B4B;
+}
+
 * {
     padding: 0%;
     margin: 0%;
 }
 
 body {
-    background-color: rgb(224, 223, 223);
+    background-image: linear-gradient(to top, var(--cor2), var(--cor3));
 }
 
 .banner {
-    background-color: #f7f7f7;
-    border-radius: 20px;
-    box-shadow: 5px 5px 15px gray;
+    background-color: var(--cor1);
+    /*border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;*/
     margin-bottom: 20px;
     height: 120px;
+    padding: 10px;
 }
 
 .logo {
@@ -24,33 +39,60 @@ body {
     margin: auto;
     width: 120px;
     height: 120px;
+    border-radius: 90px;
 }
 
 .box {
     background-color: white;
-    box-shadow: 5px 5px 15px gray;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 50px;
-    border-radius: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
     padding: 10px;
     min-width: 320px;
     max-width: 800px;
 }
 
-.img-p {
-    display: block;
-    margin: auto;
+/*ASIDE*/
+.aside_right {
+    background-color: white;
+    box-shadow: 5px 5px 1px var(--cor1);
+    min-width: 200px;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    border-radius: 10px;
 }
 
+@media screen and (min-width: 1290px) { 
+    .aside_right {
+        width: 200px; 
+        position: absolute; 
+        right: 20px; 
+        top: 0;
+        margin-top: 210px;
+        background-color: white;
+        box-shadow: 5px 5px 1px var(--cor1);
+        border-radius: 10px;
+    }
+}
+/*-------------------*/
 
-a {
-    background-color: white;
-    box-shadow: 5px 5px 15px gray;
+.img_p {
+    display: block;
+    margin: auto;
+    border-radius: 3px;
+}
+
+.menu_item {
+    background-color: #F2B84B;
     border-radius: 20px;
     text-decoration: none;
-    color: black;
-    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-family: var(--font-destaque);
     font-weight: 500;
     padding: 5px;
     margin: 5px;
@@ -63,22 +105,24 @@ h1, h2, p {
     text-align: justify;    
 }
 
-h1 {
-    font-family: 'Oswald', sans-serif;
+.titulo {
+    text-align: center;
+    color: var(--cor5);
+    font-family: var(--font-destaque);
     font-weight: 500;
-    font-size: 2.5em;
-    background-color: rgb(224, 223, 223);
+    font-size: 2.1em;
+    background-color: rgb(242,75,75,0.1);
     border-radius: 10px; 
 }
 
 h2 {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--font-destaque);
     font-weight: 500;
-    font-size: 1.8em;
+    font-size: 1.5em;
 }
 
 p {
-    font-family: 'Oswald', sans-serif;
+    font-family: var(--font-padrao);
     font-weight: 300;
     font-size: 1.2em;
 }
@@ -87,4 +131,62 @@ footer > p {
     text-align: center;
     color: black;
     font-size: 0.9em;
+}
+
+.h1 {
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: var(--cor4);
+    text-shadow: 2px 2px 1px var(--cor1);
+}
+
+.list_aside {
+    list-style-type: none;
+    color: white;
+    text-align: center;
+    padding: 5px;
+    font-family: var(--font-destaque);
+    background-color: #F24B4B;
+    margin: 5px;
+    border-radius: 3px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.h1_aside {
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: var(--cor4);
+    text-shadow: 2px 2px 1px var(--cor1);
+}
+
+.p_aside {
+    text-align: center;
+    font-family: var(--font-padrao);
+}
+
+.h2_aside {
+    text-align: center;
+    font-family: var(--font-destaque);
+    color: var(--cor4);
+    text-shadow: 2px 2px 1px var(--cor1);
+}
+
+
+/*media (hr)*/
+#sep_p {
+    margin: 10px;
+}
+@media screen and (min-width: 1290px) {
+    #sep_p {
+        width: 0px;
+    }
+}
+
+
+p.teste {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
 }

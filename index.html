@@ -13,22 +13,22 @@
 <body>
     <div class="banner">
         <header>
-            <img class="logo" src="image/logo.jpg" alt="logo">
+            <a href="#"><img class="logo" src="image/logo.jpg" alt="logo"></a>
         </header>
     </div>
     <nav class="menu">
-        <a href="#">MENU</a>
-        <a href="#">NOTÌCIAS</a>
-        <a href="#">FALE CONOSCO</a>
+        <a class="menu_item" href="#">MENU</a>
+        <a class="menu_item" href="#">NOTÌCIAS</a>
+        <a class="menu_item" href="#">FALE CONOSCO</a>
     </nav>
     <main class="box">
         <section>
-                <h1>Em teste de rota para 'carro voador', Embraer cobrará R$ 99 em voos de helicóptero</h1>
+                <h1 class="titulo">Em teste de rota para 'carro voador', Embraer cobrará R$ 99 em voos de helicóptero</h1>
                 <h2>Voos serão realizados no Rio de Janeiro a partir de 8 de novembro com objetivo de projetar como seria operação do veículo elétrico de pouso e decolagem vertical (eVTOL). Subsidiária da Embraer promete entregar aeronave em 2026.</h2>
         </section>
         <picture>
             <source media="(min-width: 700px)" srcset="image/helicoptero.jpg">
-            <img class="img-p" src="image/helicoptero-300.jpg" alt="heli">
+            <img class="img_p" src="image/helicoptero-300.jpg" alt="heli">
         </picture>
         <article>
             <p>A fabricante de aeronaves Embraer anunciou que sua subsidiária Eve começará a operar em 8 de novembro uma rota de helicópteros no Rio de Janeiro que custará R$ 99 por passageiro. A ideia é testar como seria a operação de "carros voadores", como são conhecidos os eVTOLs.</p>
@@ -38,13 +38,28 @@
             <p>O preço de R$ 99 por passageiro é próximo ao que a empresa imagina para uma futura operação com eVTOLs.</p>
             <p>"A simulação no Rio de Janeiro, uma das cidades com mais congestionamento no Brasil e no mundo, nos ajudará a levantar as reais necessidades dos usuários, parceiros e comunidade que irão se beneficiar das nossas soluções de mobilidade", disse o CEO da Eve, André Stein.</p>
             <p>As passagens para as viagens da Eve de helicópteros poderão ser compradas no site e no aplicativo da plataforma de voos sob demanda Flapper. As aeronaves serão operadas pela empresa de táxi aéreo Helisul.</p>
-        </article>
-        <aside>
-
-        </aside>  
+        </article>    
     </main>
-    <footer>
-            <p>Copyright &copy; @eu_andersonviana</p>
-    </footer>
+    <hr id="sep_p">
+    <aside class="aside_right">
+           <h1 class="h1_aside">NOTICIAS</h1>
+           <ul>
+               <a href="#noticia">
+                   <li class="list_aside">Noticia 1</li>
+               </a>
+               <a href="#noticia">
+                   <li class="list_aside" >Noticia 2</li>
+               </a>
+               <a href="#noticia">
+                <li class="list_aside">Noticia 3</li>
+               </a>
+           </ul>
+           <h2 class="h2_aside">Atual.</h2>
+           <p class="p_aside">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem amet excepturi deleniti, voluptatibus modi eius! Dolore voluptatum sit soluta reiciendis ullam reprehenderit quo ad neque, exercitationem suscipit alias autem asperiores.</p>
+
+           <hr>
+
+           <p class="teste">*area de teste*</p>
+    </aside>
 </body>
 </html>
