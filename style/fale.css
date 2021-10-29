@@ -1,12 +1,12 @@
 @charset "UTF-8";
 
 h1 {
-    font-size: 6em;
+    font-size: 3em;
     text-align: center;
 }
 
 img {
     display: block;
-    width: 800px;
     margin: auto;
+    width: 300px;
 }
