@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+h1 {
+    font-size: 6em;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 800px;
+    margin: auto;
+}
